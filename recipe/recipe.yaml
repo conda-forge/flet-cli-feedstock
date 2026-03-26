@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - flet
+    - flet ==${{ version }}
     - watchdog >=4.0.0
     - packaging >=25.0
     - qrcode >=7.4.2
