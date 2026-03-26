@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: flet-cli
-  version: "0.82.0"
+  version: "0.82.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/flet_cli-${{ version }}.tar.gz
-  sha256: d9a5b410b6ba9bdade6c2e9ed065fd34dca1fc87445c64d4c679963bacf55489
+  sha256: 26af9772abba80ab8e03292a2395056f35dd1e2b14a896a6c905bb2be8ef485c
 
 build:
   number: 0
@@ -24,13 +24,14 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - flet
+    - flet ==${{ version }}
     - watchdog >=4.0.0
     - packaging >=25.0
     - qrcode >=7.4.2
     - tomli >=1.1.0
     - cookiecutter >=2.6.0
     - chardet <6
+    - binaryornot <0.5
 
 tests:
   - python:
