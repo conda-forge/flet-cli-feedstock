@@ -31,6 +31,7 @@ requirements:
     - tomli >=1.1.0
     - cookiecutter >=2.6.0
     - chardet <6
+    - binaryornot <0.5
 
 tests:
   - python:
