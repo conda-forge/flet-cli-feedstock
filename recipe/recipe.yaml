@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: flet-cli
-  version: "0.86.2"
+  version: "0.86.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/flet_cli-${{ version }}.tar.gz
-  sha256: b988386c798824b938e3e37304e48f3c1ab988d0758d016d967f911ba1795680
+  sha256: b2f7ff6b47269cba4f5d5eeac4d6179211df1bc897879ea4f7ae62c2c97b2ca8
 
 build:
   number: 0
