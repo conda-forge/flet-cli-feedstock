@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: flet-cli
-  version: "0.86.3"
+  version: "0.86.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/flet_cli-${{ version }}.tar.gz
-  sha256: b2f7ff6b47269cba4f5d5eeac4d6179211df1bc897879ea4f7ae62c2c97b2ca8
+  sha256: 835d635bbdcd30f9fd068edfb3c9594765f1836f4d6fcc04976c8c8f8e141162
 
 build:
   number: 0
@@ -32,13 +32,16 @@ requirements:
     - cookiecutter >=2.6.0
     - chardet <6
     - binaryornot <0.5
+    - rich >=13.0.0
 
 tests:
   - python:
       imports:
         - flet_cli
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   homepage: https://github.com/flet-dev/flet/tree/main/sdk/python/packages/flet-cli
