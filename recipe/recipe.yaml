@@ -32,13 +32,16 @@ requirements:
     - cookiecutter >=2.6.0
     - chardet <6
     - binaryornot <0.5
+    - rich >=13.0.0
 
 tests:
   - python:
       imports:
         - flet_cli
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   homepage: https://github.com/flet-dev/flet/tree/main/sdk/python/packages/flet-cli
