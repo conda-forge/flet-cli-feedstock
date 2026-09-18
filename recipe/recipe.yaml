@@ -33,6 +33,7 @@ requirements:
     - chardet <6
     - binaryornot <0.5
     - rich >=13.0.0
+    - flet-platform-assets ==1.0.0
 
 tests:
   - python:
