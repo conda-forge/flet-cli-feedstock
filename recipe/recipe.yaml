@@ -28,12 +28,11 @@ requirements:
     - watchdog >=4.0.0
     - packaging >=25.0
     - qrcode >=7.4.2
-    - tomli >=1.1.0
     - cookiecutter >=2.6.0
     - chardet <6
     - binaryornot <0.5
     - rich >=13.0.0
-    - flet-platform-assets ==1.0.0
+    - flet-platform-assets ==1.0.1
 
 tests:
   - python:
